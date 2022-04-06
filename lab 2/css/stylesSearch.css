@@ -1,0 +1,250 @@
+.btn-menu {
+  color: #fff;
+  padding-top: 22px;
+  position: fixed;
+  top: 1%;
+  right: 2%;
+  cursor: pointer;
+  transition: right 0.23s;
+  width: 30px;
+  height: 20px;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+.btn-menu span {
+  display: block;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px 0 0 0;
+  transition: all 0.1s linear 0.23s;
+  position: relative;
+}
+
+.hidden-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: fixed;
+  list-style: none;
+  padding: 0 5px;
+  margin: 0;
+  box-sizing: border-box;
+  width: 20%;
+  background: rgba(255, 255, 255, 0.45);
+  border-radius: 10px;
+  height: 100%;
+  top: 0;
+  right: -20%;
+  transition: right 0.2s;
+  z-index: 200;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+.link-hidden {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  text-decoration: none;
+  text-align: center;
+  color: #373a3c;
+
+  cursor: pointer;
+}
+.hidden-menu li {
+  margin-bottom: 20px;
+  padding: 10px 0;
+}
+
+.hidden-menu li a {
+  text-decoration: none;
+  font-size: 30px;
+  color: #373a3c;
+}
+
+.hidden-menu li a:hover {
+  text-decoration: none;
+}
+
+.hidden-menu-ticker {
+  display: none;
+}
+
+.btn-menu span.first {
+  margin-top: 0;
+}
+
+.hidden-menu-ticker:checked ~ .btn-menu {
+  right: 20%;
+}
+
+.hidden-menu-ticker:checked ~ .hidden-menu {
+  right: 0;
+}
+
+.hidden-menu-ticker:checked ~ .btn-menu span.first {
+  transform: rotate(45deg);
+  top: 8px;
+}
+
+.hidden-menu-ticker:checked ~ .btn-menu span.second {
+  opacity: 0;
+}
+
+.hidden-menu-ticker:checked ~ .btn-menu span.third {
+  transform: rotate(-45deg);
+  top: -8px;
+}
+
+@media (max-width: 425px) {
+  .hidden-menu {
+    width: 80%;
+    right: -80%;
+  }
+  .hidden-menu-ticker:checked ~ .btn-menu {
+    right: 80%;
+  }
+}
+
+.header {
+  background: rgba(82, 0, 132, 0.9);
+}
+
+.nav-link {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 275;
+  font-size: 24px;
+
+  text-decoration: none;
+
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.main-info {
+  background: linear-gradient(
+    180deg,
+    #631a90 0%,
+    rgba(196, 54, 185, 0.9) 61.77%,
+    rgba(196, 54, 185, 0.7) 100%
+  );
+}
+
+.main-title {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 56px;
+  text-decoration: none;
+
+  color: #ffffff;
+}
+
+.main-cards {
+  background: linear-gradient(
+    180deg,
+    rgba(196, 54, 185, 0.7) 1.35%,
+    rgba(196, 54, 185, 0.371875) 98.96%
+  );
+}
+
+.btn {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.89) -9.67%,
+    #1fc4e0 113%
+  );
+  border: 1px solid rgba(55, 58, 60, 0.45);
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.7);
+  border-radius: 50px;
+
+  font-family: "Roboto";
+  font-style: italic;
+  font-weight: 800;
+  font-size: 13px;
+
+  color: #000000;
+}
+
+.card {
+  filter: drop-shadow(-12px -12px 4px rgba(229, 229, 229, 0.69));
+}
+
+.card-text {
+  font-family: "Roboto";
+  font-style: italic;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 19px;
+
+  color: #ffffff;
+}
+
+.main-links {
+  height: 500px;
+}
+
+.footer-img {
+  position: absolute;
+  background-size: cover;
+}
+
+.footer {
+  background: linear-gradient(
+    180deg,
+    rgba(196, 54, 185, 0.7) 0%,
+    rgba(196, 196, 196, 0.27) 100%
+  );
+}
+.link {
+  margin-right: 6px;
+  list-style: none;
+}
+
+.height-row {
+  height: 360.81px;
+}
+.nav-link-footer {
+  font-family: "Roboto";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.footer-nav {
+}
+.height-row2 {
+  height: 60.81px;
+}
+.footer > .row {
+  background: url(../icon/clouds\ 1.svg) no-repeat center;
+  background-size: cover;
+  align-items: flex-end;
+}
+.card-txt {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.btn-form {
+  background: linear-gradient(90deg, #c436b9 -9.67%, #1fc4e0 113%);
+  border-radius: 50px;
+}
+.text-footer{
+  text-decoration: none;
+  font-family: "Roboto";
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+
+color: rgba(0, 0, 0, 0.9);
+}

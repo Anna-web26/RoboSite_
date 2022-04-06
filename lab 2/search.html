@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/stylesSearch.css" type="text/css" rel="stylesheet">
+  <link rel="stylesheet" href="./fonts/poppins/stylesheet.css">
+  
+    <title>Новости</title>
+</head>
+<body>
+<!--- Навигационная панель  -->
+<div class="container-fluid header">
+  <nav class="navbar navbar-expand-lg ">
+        <a href ='#'><img src="icon/Logo.svg" class = "logo" class="logotype position-relative" ></a>
+        <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="index.html">RoboNews</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="news.html">News</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="search.html">Search</a>
+                  </li>
+                </ul>
+
+
+            <!-- Кнопка выезжающего меню справа-->
+
+          
+            <input type="checkbox" id="hmt" class="hidden-menu-ticker">
+
+            <label for="hmt" class="btn-menu">
+                <span class="first"></span>
+                <span class="second"></span>
+                <span class="third"></span>
+            </label>
+
+            <ul class="hidden-menu">
+                <li><a  href="index.html"class="link-hidden">Home</a></li>
+                <li><a  href="news.html"class="link-hidden">News</a></li>
+                <li><a  href="search.html"class="link-hidden">Search</a></li>
+                
+            </ul>
+
+            <!-- Кнопка выезжающего меню справа-->
+        </div>
+  </nav>
+</div>
+<!--- Навигационная панель  -->
+
+
+
+<!--- Главная часть сайта  -->
+<div class="container-fluid main-info">
+    <div class="row">
+          <div class="col-sm-1"></div>
+
+          <div class="col-sm-10 news">
+            <form name="form">
+                <div class="form-group my-3">
+                  <label for="formGroupNameRobot">Name Robot</label>
+                  <input type="text" class="form-control" id="formGroupNameRobot" name="formGroupNameRobot" placeholder="Enter Robot`s name...">
+                </div>
+                <div class="form-group my-3">
+                  <label for="formGroupCountry">Country of the robot manufacturer</label>
+                  <input type="text" class="form-control" id="formGroupCountry" name="formGroupCountry" placeholder="Enter country of the robot manufacturer...">
+                </div>
+                <div class="form-group my-3">
+                    <label for="formGroupYear">Year of release</label>
+                    <input type="text" class="form-control" id="formGroupYear" name="formGroupYear"  placeholder="Start entering the year of release...">
+                </div>
+               
+                <button type="submit" class="btn btn-primary btn-text btn-form" style="width: 95px">Search</button>
+              </form>
+
+          </div>
+
+          <div class="col-sm-1"></div>
+   </div>
+</div>
+<!--- Главная часть сайта  -->
+
+
+
+
+
+
+
+
+
+<!--- Подвал  -->
+<div class="container-fluid footer">
+  <div class="row height-row">
+    
+    <div class="col-sm-1"> <img src="icon/idea 4.svg" class = "logo" class="logotype position-relative" ></div>
+
+    <div class="col-sm-7">  
+      <div class="row">
+        <a class="text-footer" href="#">Thank you for your attention, the authors of the project: Zinovieva Anna, Savitsky Alexander</a>
+        <a class="text-footer" href="#">Scientific supervisor: Elena V. Kuzmina</a>
+      </div>
+   </div>
+
+
+  <div class="col-sm-3 text-end"> 
+      <a href ='https://t.me/sentimental_anna'><img src="icon/Telegram.svg" class = "link" class="logotype position-relative" ></a>
+   
+      <a href ='https://www.instagram.com/sentimental_anna/?utm_medium=copy_link'><img src="icon/Instagram.svg" class = "link" class="logotype position-relative" ></a>
+
+      <a href ='https://vk.com/sentimental_anna'><img src="icon/Vk.svg" class = "link" class="logotype position-relative" ></a>
+  </div>
+
+   
+  </div>
+</div>
+
+
+
+
+<!--- Подвал  -->
+<!--  background: url(../img/BackgroundLink.jpg) no-repeat center;
+background-size: cover;-->
+
+<script type="text/javascript" src="script/site.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</body>
+</html>
+</body>
+</html>
